@@ -67,11 +67,11 @@ function getEvent(request, response) {
 
   const url = `https://www.eventbriteapi.com/v3/events/search/?token=${process.env.EVENTBRITE_API_KEY}&location.latitude=${request.query.data.latitude}&location.longitude=${request.query.data.longitude}`;
 
-  console.log(url);
+  // console.log(url);
 
   superagent.get(url)
     .then(result => {
-      console.log(result.body.events);
+      // console.log(result.body.events);
       const eventSummeries = result.body.events.map(event => new Event(event));
       response.send(eventSummeries);
     })
