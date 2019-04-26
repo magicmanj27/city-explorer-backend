@@ -1,2 +1,2 @@
-# city-explorer-backend
-App for helping to explore a new city
+# lab-06
+Templating fake data from Google maps
