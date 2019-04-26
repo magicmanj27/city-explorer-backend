@@ -1,0 +1,26 @@
+{
+  "name": "city-explorer-backend",
+  "version": "1.0.0",
+  "description": "App for explorer a new city",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicmanj27/city-explorer-backend.git"
+  },
+  "author": "Jeremy and Adrienne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magicmanj27/city-explorer-backend/issues"
+  },
+  "homepage": "https://github.com/magicmanj27/city-explorer-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "superagent": "^5.0.3"
+  }
+}

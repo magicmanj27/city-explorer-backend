@@ -83,7 +83,7 @@ function Event(event) {
   this.link = event.url;
   this.name = event.name.text;
   this.event_date = event.start.local;
-  this.summary = event.description.text;
+  this.summary = event.summary;
 }
 
 // Error Handler
