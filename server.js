@@ -11,7 +11,7 @@ const superagent = require('superagent');
 // Application Setup
 const app = express();
 app.use(cors());
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 3000;
 
 // Incoming API Routes
 app.get('/location', searchToLatLong);
@@ -31,6 +31,10 @@ function searchToLatLong(request, response) {
   superagent.get(url)
     .then(result => {
       // console.log(result.body.results[0]);
+      console.log('=======================');
+      console.log(request.query.data);
+      console.log('-----------------------------');
+      console.log(result);
       const location = new Location(request.query.data, result);
       response.send(location);
     })
