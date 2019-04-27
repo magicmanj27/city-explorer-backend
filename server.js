@@ -46,6 +46,7 @@ function Location(query, res) {
   this.formatted_query = res.body.results[0].formatted_address;
   this.latitude = res.body.results[0].geometry.location.lat;
   this.longitude = res.body.results[0].geometry.location.lng;
+  console.log('this is formatted address.........', this.formatted_query);
 }
 
 function getWeather(request, response) {
